@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for night mode -->
+    <style name="Base.Theme.Greenify" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary colors for dark mode -->
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorPrimaryVariant">@color/green_dark_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Background color for dark mode -->
+        <item name="android:windowBackground">@color/dark_background</item>
+
+        <!-- Text color for dark mode -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/gray_light</item>
+
+        <!-- Button colors -->
+        <item name="colorButtonNormal">@color/green_dark</item>
+        <item name="colorAccent">@color/green_accent</item>
+
+        <!-- StatusBar and NavigationBar colors -->
+        <item name="android:statusBarColor">@color/green_dark</item>
+        <item name="android:navigationBarColor">@color/dark_background</item>
+    </style>
+</resources>

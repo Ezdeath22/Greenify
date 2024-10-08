@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarFragment">
+
+    <!-- TextView to display the current month -->
+    <TextView
+        android:id="@+id/monthName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/Greenify2"
+        android:layout_gravity="top|center_horizontal"
+        android:padding="16dp"/>
+
+    <!-- CalendarView to display the calendar -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp" /> <!-- Adjust this value as needed -->
+
+    <!-- Custom view for Sundays -->
+    <TextView
+        android:id="@+id/sundayHighlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="gone" /> <!-- Initially hidden -->
+    <GridLayout
+        android:id="@+id/calendarGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:rowCount="6"
+        android:columnCount="7" />
+</FrameLayout>

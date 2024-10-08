@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"> <!-- Padding for the entire layout -->
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/home"
+            android:contentDescription="@null"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/> <!-- Bottom margin between views -->
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/> <!-- Bottom margin between views -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meet Farmer Julio Quijano
+At 76 years old, Julio Quijano has been dedicated to running Quijano Farm since 1996. Located on a 1-hectare plot, the farm is known for its diverse range of vegetables, including pumpkin, tomato, bitter melon, peas, eggplant, and bottle gourd. Quijano Farm is committed to sustainable farming practices, utilizing organic methods, ash (abo), mud press, and fertilizers to cultivate healthy crops. Daily operations include weeding, monitoring for pests like whiteflies or Stemborer, and delivering fresh, homegrown produce to the community.
+"
+            android:gravity="start"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="16dp"/> <!-- Bottom margin between views -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For more details, you can view the farm's location on Google Maps:"
+            android:gravity="start"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/> <!-- Bottom margin between views -->
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="70dp"/> <!-- Bottom margin to give space at the bottom -->
+
+    </LinearLayout>
+</ScrollView>

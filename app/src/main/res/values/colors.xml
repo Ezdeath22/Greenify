@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Greenify">#176B1B</color>
+    <color name="Greenify2">#26D451</color>
+    <color name="green_dark">#388E3C</color>
+    <color name="green_dark_variant">#2E7D32</color>
+    <color name="green_accent">#4CAF50</color>
+    <color name="gray_light">#B0BEC5</color>
+    <color name="dark_background">#121212</color>
+</resources>
